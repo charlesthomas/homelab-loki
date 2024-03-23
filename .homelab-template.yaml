@@ -1,4 +1,4 @@
-_commit: v1.6.12-6-gadb38b7
+_commit: v1.8.1
 _src_path: /home/crthomas/code/charlesthomas/homelab-template
 additionalResources: ''
 backups: false
@@ -9,6 +9,9 @@ helmRelease: loki
 helmRepo: https://grafana.github.io/helm-charts
 helmValues: helm/values.yaml
 helmVersion: ''
+homepageEnabled: true
+ingHost: loki.crt.house
+ingName: loki
 ingress: false
 labels: ''
 name: loki
