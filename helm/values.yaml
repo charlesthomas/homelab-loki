@@ -919,9 +919,9 @@ tableManager:
   # -- Tolerations for table-manager pods
   tolerations: []
   # -- Enable deletes by retention
-  retention_deletes_enabled: false
+  retention_deletes_enabled: true
   # -- Set retention period
-  retention_period: 0
+  retention_period: 30d
 # Configuration for the read pod(s)
 read:
   # -- Number of replicas for the read
