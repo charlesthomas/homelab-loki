@@ -8,7 +8,7 @@ helmName: loki
 helmRelease: loki
 helmRepo: https://grafana.github.io/helm-charts
 helmValues: helm/values.yaml
-helmVersion: ''
+helmVersion: 6.5.2
 homepageEnabled: false
 ingress: false
 labels: ''
