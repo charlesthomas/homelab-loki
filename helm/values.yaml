@@ -3048,7 +3048,9 @@ chunksCache:
   extraVolumeMounts: []
   # -- Resource requests and limits for the chunks-cache
   # By default a safe memory limit will be requested based on allocatedMemory value (floor (* 1.2 allocatedMemory)).
-  resources: null
+  resources:
+    requests:
+      memory: 3Gi
   # -- Service annotations and labels
   service:
     annotations: {}
