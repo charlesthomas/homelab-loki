@@ -1298,7 +1298,7 @@ singleBinary:
     # -- Enable persistent disk
     enabled: true
     # -- Size of persistent disk
-    size: 10Gi
+    size: 25Gi
     # -- Storage class to be used.
     # If defined, storageClassName: <storageClass>.
     # If set to "-", storageClassName: "", which disables dynamic provisioning.
@@ -3411,7 +3411,7 @@ tableManager:
   # -- Tolerations for table-manager pods
   tolerations: []
   # -- Enable deletes by retention
-  retention_deletes_enabled: false
+  retention_deletes_enabled: true
   # -- Set retention period
-  retention_period: 0
+  retention_period: 7d
 
