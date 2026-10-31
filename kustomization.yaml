@@ -15,3 +15,11 @@ helmCharts:
   repo: https://grafana.github.io/helm-charts
   valuesFile: helm/values.yaml
   version: 6.5.2
+configMapGenerator:
+- name: grafana-dashboard-loki
+  files:
+  - grafana/loki.json
+  options:
+    disableNameSuffixHash: true
+    labels:
+      grafana_dashboard: "1"
